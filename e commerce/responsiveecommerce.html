@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body h3 {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .price {
+            color: green;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center;">E-Commerce Product Cards</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/280x230" alt="Product">
+            <div class="card-body">
+                <h3>Smart Watch</h3>
+                <p class="price">₹1,999</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/280x230" alt="Product">
+            <div class="card-body">
+                <h3>Wireless Earbuds</h3>
+                <p class="price">₹899</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/280x230" alt="Product">
+            <div class="card-body">
+                <h3>Bluetooth Speaker</h3>
+                <p class="price">₹1,299</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
